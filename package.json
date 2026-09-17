@@ -1,0 +1,9 @@
+{
+  "name": "viora-extension-2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node -e \"const fs = require('fs'); JSON.parse(fs.readFileSync('manifest.json', 'utf8')); console.log('Manifest OK');\" && node --check popup.js && node --check background.js",
+    "start": "python3 -m http.server 4173"
+  }
+}

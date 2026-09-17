@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self';" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viora AI</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="logo">V</div>
+          <div>
+            <p class="eyebrow">Premium AI</p>
+            <h1>Viora</h1>
+          </div>
+        </div>
+        <button id="deployBtn" class="ghost-button">Deploy</button>
+      </header>
+
+      <nav class="tab-bar" aria-label="Primary navigation">
+        <button class="tab active" data-target="chat-panel">Chat</button>
+        <button class="tab" data-target="code-panel">Code</button>
+        <button class="tab" data-target="image-panel">Image</button>
+        <button class="tab" data-target="automation-panel">Flow</button>
+        <button class="tab" data-target="search-panel">Search</button>
+      </nav>
+
+      <main class="panel-stack">
+        <section class="panel active" id="chat-panel">
+          <div class="panel-header">
+            <h2>AI Workspace</h2>
+            <span class="status-pill online">Live</span>
+          </div>
+
+          <div id="chatMessages" class="chat-messages" aria-live="polite">
+            <div class="message assistant">
+              <div class="bubble">
+                Welcome back. I can help with writing, coding, research, and multi-step workflows.
+              </div>
+            </div>
+            <div class="message user">
+              <div class="bubble">
+                Build a premium AI extension with chat, code, and citations.
+              </div>
+            </div>
+            <div class="message assistant">
+              <div class="bubble">
+                That’s exactly the direction of Viora: a polished AI workspace with deeper reasoning and a cleaner browser experience.
+              </div>
+            </div>
+          </div>
+
+          <div class="composer">
+            <textarea id="chatInput" rows="3" placeholder="Ask Viora anything..."></textarea>
+            <button id="sendBtn" class="primary-button">Send</button>
+          </div>
+        </section>
+
+        <section class="panel" id="code-panel">
+          <div class="panel-header">
+            <h2>Coding & Math</h2>
+            <span class="status-pill">Reasoning</span>
+          </div>
+
+          <div class="feature-grid">
+            <button class="feature-card" data-example="Write a React component for a premium dashboard with dark mode and glassmorphism.">
+              <span class="feature-icon">⌘</span>
+              <span>Generate Code</span>
+            </button>
+            <button class="feature-card" data-example="Explain the difference between memoization and caching with a practical example.">
+              <span class="feature-icon">∑</span>
+              <span>Explain Logic</span>
+            </button>
+            <button class="feature-card" data-example="Debug this JavaScript function and identify the root cause in plain English.">
+              <span class="feature-icon">⚠</span>
+              <span>Debug</span>
+            </button>
+            <button class="feature-card" data-example="Solve this equation step by step and show the reasoning clearly.">
+              <span class="feature-icon">π</span>
+              <span>Math</span>
+            </button>
+          </div>
+
+          <div class="code-output">
+            <pre><code>function generateDashboard(theme) {
+  return {
+    palette: theme === 'dark' ? '#0f172a' : '#f8fafc',
+    glass: 'rgba(148, 163, 184, 0.12)',
+    layout: 'premium analytics workspace',
+  };
+}</code></pre>
+          </div>
+        </section>
+
+        <section class="panel" id="image-panel">
+          <div class="panel-header">
+            <h2>Image Studio</h2>
+            <span class="status-pill">FLUX</span>
+          </div>
+
+          <div class="image-controls">
+            <input id="imagePrompt" type="text" placeholder="Describe the image you want..." value="Futuristic AI workspace with glass panels and neon gradients" />
+            <button id="generateImageBtn" class="primary-button">Generate</button>
+          </div>
+
+          <div id="imagePreview" class="image-preview" aria-label="Generated image preview">
+            <div class="preview-glow"></div>
+          </div>
+        </section>
+
+        <section class="panel" id="automation-panel">
+          <div class="panel-header">
+            <h2>Automation AI</h2>
+            <span class="status-pill">Agents</span>
+          </div>
+
+          <ul class="task-list">
+            <li><input type="checkbox" checked /> Research and summarize relevant articles</li>
+            <li><input type="checkbox" checked /> Draft AI workflow steps</li>
+            <li><input type="checkbox" /> Create follow-up action items</li>
+            <li><input type="checkbox" /> Share summary with citations</li>
+          </ul>
+
+          <button id="runAutomationBtn" class="primary-button wide-button">Run Workflow</button>
+          <div id="automationStatus" class="status-box">Automation queue ready.</div>
+        </section>
+
+        <section class="panel" id="search-panel">
+          <div class="panel-header">
+            <h2>Search with Sources</h2>
+            <span class="status-pill">Citations</span>
+          </div>
+
+          <div class="citation-list">
+            <a href="#" class="citation-item">
+              <span class="favicon">G</span>
+              <span>Google AI Overview</span>
+            </a>
+            <a href="#" class="citation-item">
+              <span class="favicon">P</span>
+              <span>Perplexity Research</span>
+            </a>
+            <a href="#" class="citation-item">
+              <span class="favicon">C</span>
+              <span>ChatGPT Web Search</span>
+            </a>
+            <a href="#" class="citation-item">
+              <span class="favicon">B</span>
+              <span>Bing Copilot</span>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="settings-bar">
+        <label for="providerSelect">Provider</label>
+        <select id="providerSelect">
+          <option>OpenAI</option>
+          <option>Anthropic</option>
+          <option>Gemini</option>
+          <option>DeepSeek</option>
+        </select>
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

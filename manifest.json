@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Viora AI Extension",
+  "version": "1.0.0",
+  "description": "Premium AI browser extension combining chat, coding, image generation, automation, and citation-based search.",
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Viora AI",
+    "default_popup": "popup.html"
+  }
+}

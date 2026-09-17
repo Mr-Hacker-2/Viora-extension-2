@@ -1,0 +1,75 @@
+Viora AI Extension – Project Idea
+
+Project Goal
+Viora is a premium AI browser extension designed to combine multiple advanced AI capabilities into one polished, user-friendly experience. The goal is to create an all-in-one AI assistant that feels modern, powerful, and visually refined, similar to the best AI tools available today but built directly into the browser.
+
+Core Features
+1. Integrated AI Chat
+The extension should provide a high-quality AI interface for general conversations, answer generation, and productivity support. It should feel fast, smooth, and clean while offering strong reasoning and natural interaction.
+
+2. Coding and Math Support
+The AI should be capable of:
+- Writing code
+- Debugging code
+- Explaining algorithms
+- Solving mathematical problems
+- Assisting with technical tasks and logic-heavy work
+
+This is a major feature because many advanced AI users expect coding and reasoning support as a core capability.
+
+3. Image Generation
+The system should include AI image generation so users can create visuals from text prompts. This makes the extension more complete and comparable to modern AI platforms that combine text and visual generation in one place.
+
+4. Automation AI
+The extension should support automation-style AI workflows, including multi-modal interaction and UI-driven tasks. This adds more value beyond simple chat and makes the tool feel like a broader AI productivity platform.
+
+5. Search Source Favicons / Citations
+A major UX feature is search source attribution. When the AI provides answers using web results, it should show small site favicons next to citations, sources, or links. This improves trust, clarity, and visual design and is inspired by tools like Perplexity, Google Gemini, ChatGPT Search, and Bing Copilot.
+
+6. Premium UI/UX Design
+The app should have:
+- A modern clean layout
+- Smooth transitions
+- Better spacing and visual hierarchy
+- More polished styling
+- Subtle effects and elegant interface behavior
+- A cohesive design that fits nicely across different screen sizes
+
+This is important because the product should feel premium, not just functional.
+
+7. Auto GitHub Deployment
+Once the final build is complete, the project should be automatically committed and pushed to GitHub without manual intervention.
+
+AI Model Stack
+Reasoning and Coding Models
+- DeepSeek-R1 / DeepSeek-V4 Series
+- Best suited for advanced reasoning, mathematical problem solving, and code generation
+
+Image Generation Models
+- FLUX.1-dev / FLUX.1-schnell
+- Best suited for high-quality visual generation with prompt following and image realism
+
+Multimodal and Automation Models
+- NVIDIA Nemotron Series
+- Intended for broader AI capabilities including multimodal workflows and automated interactions
+
+API and Authentication
+The extension should support secure API integration for these services, including keys and bearer-based authorization for model access.
+
+Project Vision
+Viora is intended to become a powerful all-in-one AI assistant that includes everything users expect from modern AI tools:
+- text generation
+- code generation
+- math reasoning
+- image generation
+- automation
+- research with citations
+- polished user experience
+
+The final product should feel like the best AI extension possible: modern, visually appealing, highly capable, and ready for GitHub deployment when finished.
+
+Target Package
+viora-extension-6-1-Best-VR
+
+Summary
+This project is not just a simple browser extension; it is an AI platform concept that aims to combine several top-tier AI features into a single, premium interface. It focuses on usefulness, modern design, and a smooth user experience while integrating multiple AI models and deployment automation.
