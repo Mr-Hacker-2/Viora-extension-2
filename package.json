@@ -1,9 +1,0 @@
-{
-  "name": "viora-ai-extension",
-  "version": "1.0.0",
-  "description": "Viora AI browser extension scaffold",
-  "private": true,
-  "scripts": {
-    "check": "node --check background.js && node --check popup.js && python3 -m json.tool manifest.json >/dev/null"
-  }
-}
