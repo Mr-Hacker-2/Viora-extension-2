@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Viora AI",
+  "version": "1.0.0",
+  "description": "Premium AI browser assistant with chat, coding support, image generation, and automation workflows.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Viora AI",
+    "default_popup": "popup.html"
+  }
+}
